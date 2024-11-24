@@ -1,0 +1,288 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header con botones de navegación */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Portada */
+.portada {
+    background-image: url('https://images.ecestaticos.com/nllIBurR7zeMDjwghRIGkzX8tlE=/0x154:2271x1433/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F5c3%2F680%2Fd14%2F5c3680d143e0375062f8a8de42185794.jpg'); /* Reemplaza con la imagen de la portada */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portada-content {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.portada h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+  body {
+    height: 100%;
+    margin: 0;
+    background: #162944;
+  }
+.boton-portada:hover {
+    color: #2dff03;
+    background-color: darkcyan;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+
+/* Hero */
+.hero {
+    background-image: url('https://www.google.es/url?sa=i&url=https%3A%2F%2Fwww.tudn.com%2Ffutbol%2Fpara-los-libros-cr7-rompio-dos-records-ante-luxemburgo-video&psig=AOvVaw2QWMJMmbNgwV27JpcEu-tU&ust=1732141046009000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiWzrW26YkDFQAAAAAdAAAAABAE'); /* Imagen del banner de la tienda */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 70px; /* Espacio para el header */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Productos */
+/* Estilo general */
+body {
+    background-color: #ffffff; /* Fondo blanco */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centramos todo el contenido */
+}
+
+header {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #444;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Sección de productos centrada */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Layout responsivo */
+    gap: 80px; /* Espacio entre los productos */
+    padding: 150px;
+    max-width: 1100px; /* Limitamos el ancho total para centrar en la pantalla */
+    margin: 0 auto; /* Centramos la sección de productos */
+    text-align: center;
+}
+
+/* Botones de producto (imágenes) */
+.product-button {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Color del texto */
+    display: block;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de hover */
+    background-color: #f9f9f9; /* Fondo claro para el botón */
+}
+
+.product-button:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+/* Imágenes dentro de los botones */
+.product-image {
+    width: 100%; /* Las imágenes ocupan todo el ancho del botón */
+    height: 250px; /* Altura fija para uniformar las imágenes */
+    object-fit: cover; /* Ajusta la imagen al contenedor sin deformarse */
+    border-bottom: 2px solid #333; /* Línea decorativa debajo de las imágenes */
+}
+
+/* Texto debajo de cada imagen */
+.product-button p {
+    margin: 20px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Adaptación responsiva */
+@media (max-width: 768px) {
+    .product-button p {
+        font-size: 16px;
+    }
+    .product-image {
+        height: 200px; /* Ajuste de altura para pantallas pequeñas */
+    }
+}
+
+
+/* Contacto */
+.contacto {
+    padding: 10%;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 7rem;
+    margin-bottom: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 0.5%;
+    margin-top: 5px;
+    border: 2px solid #ccc
+}
+
+/*redessociales*/
+/* Redes Sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos */
+    gap: 60px; /* Espacio entre los íconos */
+    padding: 400px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    background-color: #333; /* Color de fondo inicial */
+    color: white;
+    border-radius: 50%; /* Íconos redondeados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Tamaño del icono */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto suave en hover */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.social-icons .facebook:hover {
+    background-color: #3b5998; /* Color Facebook */
+}
+
+.social-icons .twitter:hover {
+    background-color: #1da1f2; /* Color Twitter */
+}
+
+.social-icons .instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); /* Degradado Instagram */
+}
+
+.social-icons .youtube:hover {
+    background-color: #ff0000; /* Color YouTube */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
